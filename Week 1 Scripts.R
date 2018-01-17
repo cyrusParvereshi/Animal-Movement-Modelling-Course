@@ -7,23 +7,23 @@
 #######################################################
 
 
-x = 1:10
-y = LETTERS[1:10]
-LoL = list(x,y)
+x <-  1:10
+y <-  LETTERS[1:10]
+LoL <-  list(x,y)
 is.vector(LoL[1])
 is.vector(LoL[[1]])
 is.list(LoL[[1]])
 LoL[1][1]
 LoL[[1]][1]
 LoL[1,2]
+df <- data.frame(x,y)
 is.data.frame(df)
-df = data.frame(x,y)
 df[1]
 df[[1]]
 df[1,2]
-alphaCube = array(LETTERS, (3,3,3)) #Find the error in this line
+alphaCube <-  array(LETTERS, c(3,3,3)) #Find the error in this line
 ###Write a line here that returns the letter "Q" from alphaCube
-random = runif(20, 5, 15)
+random <-  runif(20, 5, 15)
 summary(random)
 summary(letters[5:15])
 
@@ -42,3 +42,8 @@ summary(letters[5:15])
 
 ###Problem 3:
 ##Using only the variable 'alphaCube' and the 'paste()' function, create a string containing the name of your favorite color
+
+###Problem 4:
+##Write a function called 'description' that, for any variable entered, will tell you the type of data structure and the class
+##of data that it contains. Check your function with objects P4test1-P4test8 and compare your results to the function summary()
+
